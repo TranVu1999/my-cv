@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+:root {
+    --main-color: rgba(0, 49, 52, 0.7);
+    --primary-color: #f06a6a;
+
+    --primary-text-color: #003134;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+a, a:hover{
+    text-decoration: none;
+    box-shadow: none!important;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}

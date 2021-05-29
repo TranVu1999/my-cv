@@ -1,0 +1,149 @@
+.home__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100vh;
+}
+
+.home--right, .home--left{
+    flex: 1;
+}
+
+/* START STYLE HOME LEFT */
+.home--left{
+    color: var(--main-color);
+}
+
+.home--left h4{
+    font-size: 20px;
+}
+
+.home--left h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 40px 0 40px;
+    min-height: 180px;
+
+    line-height: 1.3;
+}
+
+.home--left h1::after{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 2px;
+    
+    background-color: var(--main-color);
+    margin-left: 2px;
+    animation: hideShow .5s infinite ease alternate;
+
+}
+
+.home--left p{
+    max-width: 80%;
+    word-spacing: 4px;
+    margin-bottom: 70px;
+}
+
+.home--left .btn-download{
+    background-color: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 25px;
+
+    border-radius: 25px;
+    animation: upDown 1s infinite ease alternate;
+}
+
+.home--left .btn-download span{
+    font-size: 16px;
+    margin-right: 5px;
+}
+/* END STYLE HOME LEFT */
+
+
+/* START STYLE HOME RIGHT */
+
+.home--right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    padding-left: 100px;
+}
+
+.home__image{
+    position: relative;
+    height: 100vh;
+}
+
+.home__image .mask{
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    transform: translate(-20px, -50%);
+
+    display: block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+
+    background-color: var(--main-color);
+    z-index: -1;
+}
+
+.home__image img{
+    width: 320px;
+    height: 550px;
+    object-fit: cover;
+    z-index: 1;
+
+    position: absolute;
+    left: 80px;
+    bottom: 0px;
+}
+/* END STYLE HOME RIGHT */
+
+@keyframes upDown{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+
+
+@keyframes hideShow{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768) {
+    
+}
+
+@media (min-width: 992px) {
+    .home--left h1{
+        font-size: 48px;
+        font-weight: 500;
+        margin: 20px 0 0px;
+        min-height: 140px;
+    }
+
+    .home--left p{
+        max-width: 100%;
+    }
+}
+
+

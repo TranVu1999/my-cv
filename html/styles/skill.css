@@ -1,0 +1,93 @@
+.skills{
+    position: relative;
+}
+
+.skill__bg1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 410px;
+    height: 400px;
+}
+
+.skill__bg2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 380px;
+    height: 120px;
+}
+
+/* START STYLE LIST SKILL */
+.skill__list{
+    padding: 0 150px;
+}
+
+.skill__list .skill__item{
+    border: 2px solid var(--main-color);
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 100px;
+
+    color: var(--primary-text-color);
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skill__list .skill__item::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-text-color);
+
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.skill__list .skill__item ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skill__list .skill__item label{
+    margin-left: 20px;
+    margin-right: 30px;
+    min-width: 110px;
+}
+
+.skill__list .skill__item li{
+    min-width: 110px;
+    height: 40px;
+    display: inline-block;
+    border: 2px solid var(--primary-text-color);
+
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    padding: 4px 15px;
+
+    line-height: 24px;
+    border-radius: 25px;
+    margin: 0 10px;
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+.skill__list .skill__item li img{
+    height: 100%;
+}
+
+.skill__list .skill__item li.small img{
+    padding: 5px;
+}
+
+/* END STYLE LIST SKILL */
