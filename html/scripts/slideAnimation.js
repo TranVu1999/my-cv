@@ -7,6 +7,7 @@ let elmNavRight = document.getElementById("nav-right")
 let elmFirstSlideItem = document.querySelector(".portfolio__carousel--content .item")
 let elmSlideDots = document.querySelectorAll(".portfolio__dots .dot")
 const widthSlideItem = elmFirstSlideItem.offsetWidth
+console.log({widthSlideItem})
 
 elmNavRight.addEventListener("click", () =>{
     if(indexActive === lengthSlide - 1){

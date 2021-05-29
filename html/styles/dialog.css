@@ -12,7 +12,6 @@
 
 .dialog__container{
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -33,4 +32,15 @@
 
 .dialog__container iframe{
     display: block;
+    width: 100%;
+}
+
+@media (min-width: 320px){
+    .dialog__container{
+        width: 300px;
+    }
+
+    .dialog__container button{
+        right: 0;
+    }
 }

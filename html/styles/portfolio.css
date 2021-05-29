@@ -29,9 +29,6 @@
     white-space: initial;
 }
 
-.item:first-child{
-    /* margin-left: -100px; */
-}
 
 .item:last-child{
     margin-right: 0;
@@ -116,6 +113,7 @@
 
     position: absolute;
     top: 50%;
+    background-color: transparent;
 }
 .nav--left{
     border-left: 3px solid var(--main-color);
@@ -162,3 +160,37 @@
 }
 /* END STYLE CAROUSEL DOT */
 
+
+@media (min-width: 320px){
+    .portfolio__carousel{
+        width: 100%;
+        padding: 0 0px;
+    }
+
+    .portfolio__thumb{
+        width: 280px;
+        height: 200px;
+    }
+
+    .portfolio__card{
+        width: 250px;
+    
+        left: 0;
+        transform: translate(15px, -25%);
+        padding: 15px 15px;
+    }
+
+    .portfolio__card h4{
+        font-size: 16px;
+    }
+
+    .portfolio__card li{
+        font-size: 12px;
+    }
+
+    .nav--left, .nav--right{
+        width: 16px;
+        height: 16px;
+    }
+    
+}

@@ -138,3 +138,61 @@
     background-color: #0077B5;
 }
 /* END STYLE ABOUT RIGHT */
+
+
+@media (min-width: 320px){
+    .about{
+        padding: 50px 0;
+    }
+
+    .about__container{
+        padding: 30px 15px 30px 15px;
+    }
+
+    .about__content{
+        display: block;
+    }
+
+    /* START STYLE LEFT */
+    .about--left{
+        margin-right: 0px;
+    }
+
+    .about__thumb{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about__avatar{
+        width: 220px;
+        height: 250px;
+        display: block;
+    }
+
+    /* START STYLE RIGHT */
+    .about--right{
+        margin-top: 30px;
+    }
+
+    .about__info .row{
+        font-size: 11px;
+    }
+
+    .about__info .row label{
+        margin-right: 15px;
+        width: 95px;
+    }
+
+    .about__social{
+        text-align: center;
+    }
+
+    .about__social a{
+        margin: 0;
+    }
+
+    .about__social a:nth-child(2){
+        margin: 0 25px;
+    }
+}

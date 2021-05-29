@@ -91,3 +91,41 @@
 }
 
 /* END STYLE LIST SKILL */
+
+
+@media (min-width: 320px){
+    .skill__bg1{
+        display: none;
+    }
+    
+    .skill__bg2{
+        display: none;
+    }
+
+    
+    .skill__list{
+        padding: 0 15px;
+    }
+
+    .skill__list .skill__item{
+        display: block;
+        border-radius: 25px;
+    }
+
+    .skill__list .skill__item::before{
+        top: 30px;
+    }
+
+    .skill__list .skill__item ul{
+        display: block;
+        margin-top: 12px;
+    }
+
+    .skill__list .skill__item li{
+        min-width: 48px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+}

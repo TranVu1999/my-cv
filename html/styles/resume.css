@@ -177,3 +177,35 @@
     transform: translate(-50%, -50%) rotateZ(90deg);
 }
 /* END STYLE RESUME RIGHT */
+
+
+@media (min-width: 320px){
+    .resume__content{
+        display: block;
+        padding: 0 0px;
+    }
+
+
+    /* START STYLE SIDE TEXT */
+    .side-text{
+        display: none;
+    }
+    /* END STYLE SIDE TEXT */
+
+
+    /* START STYLE RESUME LEFT */
+    .resume--left{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    /* END STYLE RESUME LEFT */
+
+
+    /* START STYLE RESUME RIGHT */
+    .resume--right{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+     /* END STYLE RESUME RIGHT */
+
+}

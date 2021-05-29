@@ -4,13 +4,20 @@
     padding: 0 15px;
 }
 
+@media (min-width: 320px) {
+    .container{
+        max-width: 100%;
+    }
+}
+
+
 @media (min-width: 576px) {
     .container{
         max-width: 540px;
     }
 }
 
-@media (min-width: 768) {
+@media (min-width: 768px) {
     .container{
         max-width: 720px;
     }
@@ -61,4 +68,16 @@
 
 .section-padding{
     padding: 80px 0;
+}
+
+
+@media (min-width: 320px){
+    .main-title{
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .section-padding{
+        padding: 40px 0;
+    }
 }
